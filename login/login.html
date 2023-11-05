@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es" >
+<head>
+  <meta charset="UTF-8">
+  <title>CloseEnglish - Login</title>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700;800;900&display=swap">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- Wrapper Area -->
+<div class="wrapper__area" id="wrapper_Area">
+  <!-- Forms Area -->
+  <div class="forms__area">
+    <!-- Login Form -->
+    <form class="login__form" id="loginForm">
+      <!-- Form Title -->
+      <h1 class="form__title">¡Ingresa!</h1>
+      <!-- inputs Groups -->
+      <div class="input__group">
+        <label class="field">
+          <input type="text" name="username" placeholder="Usuario" id="loginUsername">
+        </label>
+        <span class="input__icon"><i class="bx bx-user"></i></span>
+        <small class="input__error_message"></small>
+      </div>
+      <div class="input__group">
+        <label class="field">
+          <input type="password" name="password" placeholder="Contraseña" id="loginPassword">
+        </label>
+        <span class="input__icon"><i class="bx bx-lock"></i></span>
+        <span class="showHide__Icon"><i class="bx bx-hide"></i></span>
+        <small class="input__error_message"></small>
+      </div>
+      <div class="form__actions">
+        <label for="checkboxInput" class="remeber_me">
+          <input type="checkbox" id="checkboxInput">
+          <span class="checkmark"></span>
+          <span>Recuerdame</span>
+        </label>
+        <div class="forgot_password">¿Olvidaste tu contraseña?</div>
+      </div>
+      <!-- Login Button -->
+      <button type="submit" class="submit-button" id="loginSubmitBtn">Ingresa</button>
+      <!-- Alternate Login -->
+      <div class="alternate-login">
+        <div class="link">
+          <i class='bx bxl-google'></i>
+          <span>Google</span>
+        </div>
+        <div class="link">
+          <i class='bx bxl-facebook-circle'></i>
+          <span>Facebook</span>
+        </div>
+      </div>
+    </form> <!-- End Login Form -->
+
+    <!-- Sign Up Form -->
+    <form class="sign-up__form" id="signUpForm">
+      <!-- Form Title -->
+      <h1 class="form__title">¡Regístrate!</h1>
+      <!-- inputs Groups -->
+      <div class="input__group">
+        <label class="field">
+          <input type="text" name="username" placeholder="JoshuaL..." id="signUpUsername">
+        </label>
+        <span class="input__icon"><i class="bx bx-user"></i></span>
+        <small class="input__error_message"></small>
+      </div>
+      <div class="input__group">
+        <label class="field">
+          <input type="text" name="email" placeholder="joshual@email.com" id="signUpEmail">
+        </label>
+        <span class="input__icon"><i class="bx bx-at"></i></span>
+        <small class="input__error_message"></small>
+      </div>
+      <div class="input__group">
+        <label class="field">
+          <input type="password" name="password" placeholder="Contraseña123@$#" id="signUpPassword">
+        </label>
+        <span class="input__icon"><i class="bx bx-lock"></i></span>
+        <span class="showHide__Icon"><i class="bx bx-hide"></i></span>
+        <small class="input__error_message"></small>
+      </div>
+      <div class="input__group confirm__group">
+        <label class="field">
+          <input type="password" name="confirm_password" placeholder="Confirma la contraseña" id="signUpConfirmPassword">
+        </label>
+        <span class="input__icon"><i class="bx bx-lock"></i></span>
+        <span class="showHide__Icon"><i class="bx bx-hide"></i></span>
+        <small class="input__error_message"></small>
+      </div>
+      <!-- Sign Up Button -->
+      <button type="submit" class="submit-button" id="signUpSubmitBtn">Sign Up</button>
+      <div id="messageArea"></div>
+      <!-- Alternate Login -->
+      <div class="alternate-login">
+        <div class="link">
+          <i class='bx bxl-google'></i>
+          <span>Google</span>
+        </div>
+        <div class="link">
+          <i class='bx bxl-facebook-circle'></i>
+          <span>Facebook</span>
+        </div>
+      </div>
+    </form> <!-- End Sign Up Form -->
+  </div><!-- End Forms Area -->
+
+  <!-- Aside Area -->
+  <div class="aside__area" id="aside_Area">
+    <div class="login__aside-info">
+      <img src="https://d.top4top.io/p_1945xjz2y1.png" alt="Image">
+      <p>¡Bienvenid@!</p>
+      <button id="aside_signUp_Btn">Regístrate</button>
+    </div>
+    <div class="sign-up__aside-info">
+      <img src="https://d.top4top.io/p_1945xjz2y1.png" alt="Image">
+      <p>":)"</p>
+      <button id="aside_signIn_Btn">Ingresa</button>
+    </div>
+  </div>
+</div>
+<!-- End Wrapper Area -->
+<!-- partial -->
+  <script src="./script.js"></script>
+
+</body>
+</html>
